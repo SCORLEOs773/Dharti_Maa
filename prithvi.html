@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PRITHVI 1.0</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+</head>
+
+<!-- animation: marquee2 70s infinite linear; THIS IS PART OF nav style-->
+<style>
+    * {
+        cursor: none;
+        z-index: 100;
+    }
+    
+    #cursor {
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        pointer-events: none;
+        z-index: 100;
+    }
+    
+    #cursor img {
+        height: 100%;
+        width: 100%;
+        z-index: 100;
+    }
+    
+    nav {
+        height: 150px;
+        animation: marquee2 75s infinite linear;
+    }
+    
+    .workArea {
+        background-image: url(/earth\ transparent.png);
+        animation: marquee 35s infinite linear;
+    }
+    
+    @keyframes marquee {
+        0% {
+            background-position: 0;
+        }
+        100% {
+            background-position: -1190px;
+        }
+    }
+    
+    @keyframes marquee2 {
+        0% {
+            background-position: -1190px;
+        }
+        100% {
+            background-position: 0;
+        }
+    }
+    
+    #home {
+        height: 1500px;
+        background-image: url(/PLANT\ COVER.jpg);
+        background-size: contain;
+    }
+    
+    #home form label {
+        padding: 3px 3px 3px 10px;
+        font-weight: bolder;
+        font-size: larger;
+        color: deepskyblue;
+    }
+    
+    select {
+        height: 70px;
+        width: 300px;
+        margin: 5px 20px 5px 20px;
+        background-color: bisque;
+        text-align: center;
+        font-size: x-large;
+    }
+    
+    .active-page {
+        background-color: aquamarine;
+    }
+    
+    input {
+        margin: 50px;
+        height: 50px;
+        width: 100px;
+        border-radius: 20px;
+        font-weight: 700;
+        background-color: lightgreen;
+        border: 4px solid darkgreen;
+    }
+    
+    #home .container {
+        padding: 20px 0px 0px 0px;
+        background-color: bisque;
+        opacity: 0.8;
+        border-radius: 20px;
+    }
+    
+    .aboutPrithvi {
+        font-size: x-large;
+        margin: 10px;
+        padding: 10px;
+        background-color: #98f58a;
+        border-radius: 20px;
+        opacity: 0.9;
+    }
+    
+    .earth {
+        margin-left: 30px;
+    }
+</style>
+
+<body style="background-color: aquamarine;">
+    <!-- <div id="cursor"><img src="/Rotating_earth_animated_transparent.gif" /></div> -->
+    <!-- <div id="cursor"><img src="/transparent-anime.gif" /></div> -->
+    <!-- <div id="cursor"><img src="/kitty-chase-pixel.gif" /></div> -->
+    <div id="cursor"><img src="/kitty-chase-pixel.gif" /></div>
+
+    <nav class="navbar navbar-light navbar-expand-lg" style="background-color: #98f58a;">
+        <div class="container">
+            <a href="index.html" class=" title navbar-brand fw-bold fs-1" style="color:#3cdc24;background-color:antiquewhite;padding:5px 15px 5px 15px; border-radius:10px;">
+                PRITHVI 1.0
+                <!-- <p style="font-size: 20px;color: black"> Conserving Soil Saving Earth </p> -->
+            </a>
+
+            <div class="earth">
+                <img src="/Rotating_earth_animated_transparent.gif" style="height: 100px; width:100px;" alt="">
+            </div>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto g-4">
+
+                    <li class="english nav-item active-page">
+                        <a href="#" class="nav-link" style="color: dodgerblue;">
+                            ENGLISH
+                        </a>
+                    </li>
+
+                    <li class="hindi nav-item">
+                        <a href="#" class="nav-link " style="color: dodgerblue; ">
+                            हिन्दी
+                        </a>
+                    </li>
+
+                    <li class="punjabi nav-item ">
+                        <a href="#" class="nav-link " style="color: dodgerblue; ">
+                            ਪੰਜਾਬੀ
+                        </a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a href="#experience " class="nav-link " style="color: dodgerblue; ">
+                            More Languages Will Be Added Soon ...
+                        </a>
+                    </li>
+
+                    <!-- <li class="nav-item ">
+                        <a href="#certifications " class="nav-link " style="color: dodgerblue; ">
+                            How Can You Contribute
+                        </a>
+                    </li> -->
+
+                    <!-- <li class="nav- item ">
+                        <a href="#projects " class="nav-link ">Projects</a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a href="#contact " class="nav-link ">Contact Us</a>
+                    </li> -->
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <section id="home" class="workArea bg-light text-dark p-5 p-lg-0 pt-lg-5 text-center text-md-start">
+
+        <!-- <div class="earth">
+            <marquee behavior="" direction="">
+                <img src="/earth transparent.png" alt="">
+            </marquee>
+        </div> -->
+
+        <center>
+            <div class="container">
+
+                <div class="aboutPrithvi">
+
+                    <h3>
+                        <STRONG class="how">HOW TO USE PRITHVI 1.0</STRONG>
+                    </h3>
+                    <p class="p1">
+                        <strong>PRITHVI 1.0</strong> is an indegeneous built system which helps you to uniquely and accurately calculate the best Loam Conservation method which best suits your land.
+                    </p>
+                    <p class="p2">
+                        Just enter the required parameters and <strong>PRITHVI</strong> will automatically suggest you multiple methods which you can follow in order to reduce soil erosion in your land.
+                    </p>
+                </div>
+
+                <p class="dropdownheader m-5 fw-bold" style="font-size: xx-large;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:darkgreen;">Please select the appropriate parameters - </p>
+
+                <form action="/prithvi.php" class="m-5">
+                    <label for="state" class="state">STATE - </label>
+                    <select name="state" id="state">
+                    <option class="pun">Punjab</option>
+                    <option class="up">Uttar Pradesh</option>
+                    <option class="wb">West Bengal</option>
+                    <option class="guj">Gujarat</option>
+                    <option class="har">Harayana</option>
+                    <option class="mp">Madhya Pradesh</option>
+                    <option class="assa">Assam</option>
+                    <option class="ap">Andhra Pradesh</option>
+                    <option class="kar">Karnataka</option>
+                    <option class="chha">Chhattisgarh</option>
+                </select>
+                    <br><br>
+                    <label for="region" class="region">REGION - </label>
+                    <select name="region" id="region">
+                    <option class="pun2">Punjab</option>
+                    <option value="saab">Uttar Pradesh</option>
+                    <option value="opel">West Bengal</option>
+                    <option value="audi">Gujarat</option>
+                    <option value="audi">Harayana</option>
+                    <option value="audi">Madhya Pradesh</option>
+                    <option value="audi">Assam</option>
+                    <option value="audi">Andhra Pradesh</option>
+                    <option value="audi">Karnataka</option>
+                    <option value="audi">Chhattisgarh</option>
+                </select>
+                    <br><br>
+                    <label for="soil" class="soil">TYPE OF SOIL - </label>
+                    <select name="soil" id="soil">
+                    <option class="sandy">Sandy Soil</option>
+                    <option class="silt">Silt Soil</option>
+                    <option class="clay">Clay Soil</option>
+                    <option class="loamy">Loamy Soil</option>
+                    <option class="red">Red Soil</option>
+                    <option class="black">Black Soil</option>
+                    <option class="alluvial">Alluvial Soil</option>
+                    <option class="peaty">Peaty Soil</option>
+                    <option class="saline">Saline Soil</option>
+                    <option class="chalky">Chalky Soil</option>
+                    <option class="other">Others...</option>
+                </select>
+                    <br><br>
+                    <label for="rain" class="rain">ANNUAL RAINFALL - </label>
+                    <select name="rain" id="rain">
+                    <option class="u20">Under 20 cm</option>
+                    <option class="n2040">20 - 40 cm</option>
+                    <option class="n4060">40 - 60 cm</option>
+                    <option class="n60100">60 - 100 cm</option>
+                    <option class="n100150">100 - 150 cm</option>
+                    <option class="n150200">150 - 200 cm</option>
+                    <option class="o200">Over 200 cm</option>
+                </select>
+                    <br><br>
+                    <label for="terrain" class="terrain">TERRAIN - </label>
+                    <select name="terrain" id="terrain">
+                        <option class="plat">Plateau</option>
+                        <option class="moun">Mountain</option>
+                        <option class="pla">Plains</option>
+                        <option class="val">Valley</option>
+                        <option class="tun">Tundra</option>
+                        <option class="oas">Oasis</option>
+                        <option class="des">Desert</option>
+                        <option class="swa">Swamp</option>
+                        <option class="for">Forest</option>
+                        <option class="mar">Marsh</option>
+                        <option class="riv">River</option>
+                        <option class="hill">Hill</option>
+                        <option class="bar">Barren</option>
+                </select>
+                    <br><br>
+                    <label for="ground_water" class="groundWater">GROUND WATER LEVEL (in Meters Below Ground Level(Min - Max)) - </label>
+                    <select name="ground_water" id="ground_water">
+                    <option class="g020">0 - 20 MBGL</option>
+                    <option class="g2040">20 - 40 MBGL</option>
+                    <option class="g4060">40 - 60 MBGL</option>
+                    <option class="g6080">60 - 80 MBGL</option>
+                    <option class="g80100">80 - 100 MBGL</option>
+                    <option class="g100120">100 - 120 MBGL</option>
+                </select>
+                    <br><br>
+                    <input type="submit" class="submit" value="SUBMIT">
+                </form>
+
+            </div>
+
+            <div class="container m-5 p-5">
+                <h2>
+                    <strong class="construction">
+                        🚧 WEBSITE UNDER CONSTRUCTION 👷! 🚧
+                    </strong>
+                </h2>
+            </div>
+
+        </center>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <section id="home1 " class="m-5 justify-content-between align-items-center " style=" background-size: cover ">
+        <div class="container mt-5 pt-5 ">
+
+            <h2 class="text-center fw-bolder m-5 ">Loam Lovers</h2>
+
+            <div class="d-sm-flex g-4 ">
+                <div class="m-5 ">
+
+                    <img src=" " alt="Under Maintainenece " class="img-fluid d-none d-md-block aboutImg ">
+
+                </div>
+
+                <div class="container " style="background-color: darkseagreen; ">
+
+                </div>
+
+            </div>
+        </div>
+    </section> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+<script>
+    var cursor = document.getElementById("cursor");
+    document.addEventListener("mousemove", function(e) {
+        // var x = e.pageX;
+        // var y = e.pageY;
+
+        cursor.style.top = (e.pageY - cursor.offsetHeight / 2) + "px";
+        cursor.style.left = (e.pageX - cursor.offsetWidth / 2) + "px";
+    });
+
+
+    document.querySelector(".english").addEventListener("click", function() {
+        document.querySelector(".how").textContent = "HOW TO USE PRITHVI 1.0";
+
+        document.querySelector(".p1").textContent =
+            "PRITHVI 1.0 is an indegeneous built system which helps you to uniquely and accurately calculate the best Loam Conservation method which best suits your land.";
+
+        document.querySelector(".p2").textContent =
+            "Just enter the required parameters and PRITHVI will automatically suggest you multiple methods which you can follow in order to reduce soil erosion in your land.";
+
+        document.querySelector(".english").classList.add("active-page");
+        document.querySelector(".hindi").classList.remove("active-page");
+        document.querySelector(".punjabi").classList.remove("active-page");
+
+        document.querySelector(".title").textContent = "PRITHVI 1.0";
+        document.querySelector(".dropdownheader").textContent =
+            "Please select the appropriate parameters -";
+        document.querySelector(".state").textContent = "STATE -";
+        document.querySelector(".region").textContent = "REGION -";
+        document.querySelector(".soil").textContent = "TYPE OF SOIL -";
+        document.querySelector(".rain").textContent = "ANNUAL RAINFALL -";
+        document.querySelector(".terrain").textContent = "TERRAIN -";
+        document.querySelector(".groundWater").textContent =
+            "GROUND WATER LEVEL (in Meters Below Ground Level(Min - Max)) -";
+        document.querySelector(".submit").value = "SUBMIT";
+
+        document.querySelector(".pun2").textContent = "Punjab";
+
+        document.querySelector(".pun").textContent = "Punjab";
+        document.querySelector(".up").textContent = "Uttar Pradesh";
+        document.querySelector(".wb").textContent = "West Bengal";
+        document.querySelector(".guj").textContent = "Gujarat";
+        document.querySelector(".har").textContent = "Haryana";
+        document.querySelector(".mp").textContent = "Madhya Pradesh";
+        document.querySelector(".assa").textContent = "Assam";
+        document.querySelector(".ap").textContent = "Andhra Pradesh";
+        document.querySelector(".kar").textContent = "Karnataka";
+        document.querySelector(".chha").textContent = "Chhatisgrah";
+
+        document.querySelector(".sandy").textContent = "Sandy Soil";
+        document.querySelector(".silt").textContent = "Silt Soil";
+        document.querySelector(".clay").textContent = "Clay Soil";
+        document.querySelector(".loamy").textContent = "Loamy Soil";
+        document.querySelector(".red").textContent = "Red Soil";
+        document.querySelector(".black").textContent = "Black Soil";
+        document.querySelector(".alluvial").textContent = "Alluvial Soil";
+        document.querySelector(".peaty").textContent = "Peaty Soil";
+        document.querySelector(".saline").textContent = "Saline Soil";
+        document.querySelector(".chalky").textContent = "Chalky Soil";
+        document.querySelector(".other").textContent = "Other ...";
+
+        document.querySelector(".u20").textContent = "Under 20 cm";
+        document.querySelector(".n2040").textContent = "20 - 40 cm";
+        document.querySelector(".n4060").textContent = "40 - 60 cm";
+        document.querySelector(".n60100").textContent = "60 - 100 cm";
+        document.querySelector(".n100150").textContent = "100 - 150 cm";
+        document.querySelector(".n150200").textContent = "150 - 200 cm";
+        document.querySelector(".o200").textContent = "Over 200 cm";
+
+        document.querySelector(".plat").textContent = "Plateau";
+        document.querySelector(".moun").textContent = "Mountain";
+        document.querySelector(".pla").textContent = "Plains";
+        document.querySelector(".val").textContent = "Valley";
+        document.querySelector(".tun").textContent = "Tundra";
+        document.querySelector(".oas").textContent = "Oasis";
+        document.querySelector(".des").textContent = "Desert";
+        document.querySelector(".swa").textContent = "Swamp";
+        document.querySelector(".for").textContent = "Forest";
+        document.querySelector(".mar").textContent = "Marsh";
+        document.querySelector(".riv").textContent = "River";
+        document.querySelector(".hill").textContent = "Hill";
+        document.querySelector(".bar").textContent = "Barren";
+
+        document.querySelector(".g020").textContent = "0 - 20 MBGL";
+        document.querySelector(".g2040").textContent = "20 - 40 MBGL";
+        document.querySelector(".g4060").textContent = "40 - 60 MBGL";
+        document.querySelector(".g6080").textContent = "60 - 80 MBGL";
+        document.querySelector(".g80100").textContent = "80 - 100 MBGL";
+        document.querySelector(".g100120").textContent = "100 - 120 MBGL";
+
+        document.querySelector(".construction").textContent =
+            "🚧 WEBSITE UNDER CONSTRUCTION 👷! 🚧";
+    });
+
+    document.querySelector(".hindi").addEventListener("click", function() {
+        document.querySelector(".how").textContent =
+            "पृथ्वी 1.0 . का उपयोग कैसे करें";
+
+        document.querySelector(".p1").textContent =
+            "पृथ्वी 1.0 एक स्वदेशी निर्मित प्रणाली है जो आपको विशिष्ट रूप से और सटीक रूप से सर्वश्रेष्ठ दोमट संरक्षण विधि की गणना करने में मदद करती है जो आपकी भूमि के लिए सबसे उपयुक्त है।";
+
+        document.querySelector(".p2").textContent =
+            "बस आवश्यक पैरामीटर दर्ज करें और पृथ्वी स्वचालित रूप से आपको कई तरीके सुझाएगा जिनका पालन आप अपनी भूमि में मिट्टी के कटाव को कम करने के लिए कर सकते हैं।";
+
+        document.querySelector(".english").classList.remove("active-page");
+        document.querySelector(".hindi").classList.add("active-page");
+        document.querySelector(".punjabi").classList.remove("active-page");
+
+        document.querySelector(".title").textContent = "पृथ्वी 1.0";
+        document.querySelector(".dropdownheader").textContent =
+            "कृपया उपयुक्त मापदंडों का चयन करें -";
+        document.querySelector(".state").textContent = "राज्य -";
+        document.querySelector(".region").textContent = "क्षेत्र -";
+        document.querySelector(".soil").textContent = "मिट्टी के प्रकार -";
+        document.querySelector(".rain").textContent = "वार्षिक वर्षा -";
+        document.querySelector(".terrain").textContent = "भू-भाग -";
+        document.querySelector(".groundWater").textContent =
+            "भूजल स्तर (जमीन स्तर से नीचे मीटर में (न्यूनतम - अधिकतम)) -";
+        document.querySelector(".submit").value = "जमा ";
+
+        document.querySelector(".pun2").textContent = "पंजाब";
+
+        document.querySelector(".pun").textContent = "पंजाब";
+        document.querySelector(".up").textContent = "उतार प्रदेश";
+        document.querySelector(".wb").textContent = "पश्चिम बंगाल";
+        document.querySelector(".guj").textContent = "गुजरात";
+        document.querySelector(".har").textContent = "हरयाणा";
+        document.querySelector(".mp").textContent = "मध्य प्रदेश";
+        document.querySelector(".assa").textContent = "असम";
+        document.querySelector(".ap").textContent = "आंध्र प्रदेश";
+        document.querySelector(".kar").textContent = "कर्नाटक";
+        document.querySelector(".chha").textContent = "छत्तीसगढ";
+
+        document.querySelector(".sandy").textContent = "रेतीली मिट्टी";
+        document.querySelector(".silt").textContent = "गाद मिट्टी";
+        document.querySelector(".clay").textContent = "चिकनी मिट्टी";
+        document.querySelector(".loamy").textContent = "बलुई मिट्टी";
+        document.querySelector(".red").textContent = "लाल मिट्टी";
+        document.querySelector(".black").textContent = "काली मिट्टी";
+        document.querySelector(".alluvial").textContent = "जलोढ़ मिट्टी";
+        document.querySelector(".peaty").textContent = "पीट मिट्टी";
+        document.querySelector(".saline").textContent = "लवणीय मिट्टी";
+        document.querySelector(".chalky").textContent = "चाकली मिट्टी";
+        document.querySelector(".other").textContent = "अन्य ...";
+
+        document.querySelector(".u20").textContent = "20 सेमी के नीचे";
+        document.querySelector(".n2040").textContent = "20 - 40 सेमी";
+        document.querySelector(".n4060").textContent = "40 - 60 सेमी";
+        document.querySelector(".n60100").textContent = "60 - 100 सेमी";
+        document.querySelector(".n100150").textContent = "100 - 150 सेमी";
+        document.querySelector(".n150200").textContent = "150 - 200 सेमी";
+        document.querySelector(".o200").textContent = "200 सेमी से अधिक";
+
+        document.querySelector(".plat").textContent = "पठार";
+        document.querySelector(".moun").textContent = "पर्वत";
+        document.querySelector(".pla").textContent = "मैदानों";
+        document.querySelector(".val").textContent = "घाटी";
+        document.querySelector(".tun").textContent = "टुंड्रा";
+        document.querySelector(".oas").textContent = "शाद्वल";
+        document.querySelector(".des").textContent = "रेगिस्तान";
+        document.querySelector(".swa").textContent = "दलदली कीचड़";
+        document.querySelector(".for").textContent = "जंगल";
+        document.querySelector(".mar").textContent = "दलदल";
+        document.querySelector(".riv").textContent = "नदी";
+        document.querySelector(".hill").textContent = "पहाड़";
+        document.querySelector(".bar").textContent = "बंजर";
+
+        document.querySelector(".g020").textContent = "0 - 20 एमबीजीएल";
+        document.querySelector(".g2040").textContent = "20 - 40 एमबीजीएल";
+        document.querySelector(".g4060").textContent = "40 - 60 एमबीजीएल";
+        document.querySelector(".g6080").textContent = "60 - 80 एमबीजीएल";
+        document.querySelector(".g80100").textContent = "80 - 100 एमबीजीएल";
+        document.querySelector(".g100120").textContent = "100 - 120 एमबीजीएल";
+
+        document.querySelector(".construction").textContent =
+            "🚧 वेबसाइट निर्माणाधीन 👷! 🚧";
+    });
+
+    document.querySelector(".punjabi").addEventListener("click", function() {
+        document.querySelector(".how").textContent =
+            "ਪ੍ਰਿਥਵੀ 1.0 ਦੀ ਵਰਤੋਂ ਕਿਵੇਂ ਕਰੀਏ";
+
+        document.querySelector(".p1").textContent =
+            "ਪ੍ਰਿਥਵੀ 1.0 ਇੱਕ ਸਵਦੇਸ਼ੀ ਬਣਾਇਆ ਗਿਆ ਸਿਸਟਮ ਹੈ ਜੋ ਤੁਹਾਨੂੰ ਸਭ ਤੋਂ ਵਧੀਆ ਲੋਮ ਕੰਜ਼ਰਵੇਸ਼ਨ ਵਿਧੀ ਦੀ ਵਿਲੱਖਣ ਅਤੇ ਸਹੀ ਢੰਗ ਨਾਲ ਗਣਨਾ ਕਰਨ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ ਜੋ ਤੁਹਾਡੀ ਜ਼ਮੀਨ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਹੈ।";
+
+        document.querySelector(".p2").textContent =
+            "ਬਸ ਲੋੜੀਂਦੇ ਮਾਪਦੰਡ ਦਰਜ ਕਰੋ ਅਤੇ ਪ੍ਰਿਥਵੀ ਆਪਣੇ ਆਪ ਤੁਹਾਨੂੰ ਕਈ ਤਰੀਕਿਆਂ ਦਾ ਸੁਝਾਅ ਦੇਵੇਗਾ ਜਿਨ੍ਹਾਂ ਦੀ ਤੁਸੀਂ ਆਪਣੀ ਜ਼ਮੀਨ ਵਿੱਚ ਮਿੱਟੀ ਦੇ ਕਟਾਵ ਨੂੰ ਘਟਾਉਣ ਲਈ ਅਪਣਾ ਸਕਦੇ ਹੋ।";
+
+        document.querySelector(".english").classList.remove("active-page");
+        document.querySelector(".hindi").classList.remove("active-page");
+        document.querySelector(".punjabi").classList.add("active-page");
+
+        document.querySelector(".title").textContent = "ਪ੍ਰਿਥਵੀ 1.0";
+        document.querySelector(".dropdownheader").textContent =
+            "ਕਿਰਪਾ ਕਰਕੇ ਉਚਿਤ ਮਾਪਦੰਡ ਚੁਣੋ -";
+        document.querySelector(".state").textContent = "ਰਾਜ -";
+        document.querySelector(".region").textContent = "ਖੇਤਰ -";
+        document.querySelector(".soil").textContent = "ਮਿੱਟੀ ਦੀਆਂ ਕਿਸਮਾਂ -";
+        document.querySelector(".rain").textContent = "ਸਾਲਾਨਾ ਵਰਖਾ -";
+        document.querySelector(".terrain").textContent = "ਭੂਮੀ -";
+        document.querySelector(".groundWater").textContent =
+            "ਜ਼ਮੀਨੀ ਪਾਣੀ ਦਾ ਪੱਧਰ (ਜ਼ਮੀਨੀ ਪੱਧਰ ਤੋਂ ਹੇਠਾਂ ਮੀਟਰਾਂ ਵਿੱਚ (ਘੱਟੋ-ਵੱਧ) -";
+        document.querySelector(".submit").value = "ਜਮ੍ਹਾਂ ਕਰੋ";
+
+        document.querySelector(".pun2").textContent = "ਪੰਜਾਬ";
+
+        document.querySelector(".pun").textContent = "ਪੰਜਾਬ";
+        document.querySelector(".up").textContent = "ਉੱਤਰ ਪ੍ਰਦੇਸ਼";
+        document.querySelector(".wb").textContent = "ਪੱਛਮੀ ਬੰਗਾਲ";
+        document.querySelector(".guj").textContent = "ਗੁਜਰਾਤ";
+        document.querySelector(".har").textContent = "ਹਰਿਆਣਾ";
+        document.querySelector(".mp").textContent = "ਮੱਧ ਪ੍ਰਦੇਸ਼";
+        document.querySelector(".assa").textContent = "ਅਸਾਮ";
+        document.querySelector(".ap").textContent = "ਆਂਧਰਾ ਪ੍ਰਦੇਸ਼";
+        document.querySelector(".kar").textContent = "ਕਰਨਾਟਕ";
+        document.querySelector(".chha").textContent = "ਛੱਤੀਸਗੜ੍ਹ";
+
+        document.querySelector(".sandy").textContent = "ਰੇਤਲੀ ਮਿੱਟੀ";
+        document.querySelector(".silt").textContent = "ਸਿਲਟ ਮਿੱਟੀ";
+        document.querySelector(".clay").textContent = "ਮਿੱਟੀ ਦੀ ਮਿੱਟੀ";
+        document.querySelector(".loamy").textContent = "ਲੋਮੀ ਮਿੱਟੀ";
+        document.querySelector(".red").textContent = "ਲਾਲ ਮਿੱਟੀ";
+        document.querySelector(".black").textContent = "ਕਾਲੀ ਮਿੱਟੀ";
+        document.querySelector(".alluvial").textContent = "ਐਲੂਵੀਅਲ ਮਿੱਟੀ";
+        document.querySelector(".peaty").textContent = "ਪੀਟੀ ਮਿੱਟੀ";
+        document.querySelector(".saline").textContent = "ਖਾਰੀ ਮਿੱਟੀ";
+        document.querySelector(".chalky").textContent = "ਚੱਕੀ ਮਿੱਟੀ";
+        document.querySelector(".other").textContent = "ਹੋਰ...";
+
+        document.querySelector(".u20").textContent = "20 ਸੈ.ਮੀ";
+        document.querySelector(".n2040").textContent = "20 - 40 ਸੈ.ਮੀ";
+        document.querySelector(".n4060").textContent = "40 - 60 ਸੈ.ਮੀ";
+        document.querySelector(".n60100").textContent = "60 - 100 ਸੈ.ਮੀ";
+        document.querySelector(".n100150").textContent = "100 - 150 ਸੈ.ਮੀ";
+        document.querySelector(".n150200").textContent = "150 - 200 ਸੈ.ਮੀ";
+        document.querySelector(".o200").textContent = "200 ਸੈਂਟੀਮੀਟਰ ਤੋਂ ਵੱਧ";
+
+        document.querySelector(".plat").textContent = "ਪਠਾਰ";
+        document.querySelector(".moun").textContent = "ਪਹਾੜ";
+        document.querySelector(".pla").textContent = "ਮੈਦਾਨੀ";
+        document.querySelector(".val").textContent = "ਵਾਦੀ";
+        document.querySelector(".tun").textContent = "ਟੁੰਡਰਾ";
+        document.querySelector(".oas").textContent = "ਓਏਸਿਸ";
+        document.querySelector(".des").textContent = "ਮਾਰੂਥਲ";
+        document.querySelector(".swa").textContent = "ਦਲਦਲ";
+        document.querySelector(".for").textContent = "ਜੰਗਲ";
+        document.querySelector(".mar").textContent = "ਮਾਰਸ਼";
+        document.querySelector(".riv").textContent = "ਨਦੀ";
+        document.querySelector(".hill").textContent = "ਪਹਾੜੀ";
+        document.querySelector(".bar").textContent = "ਬੰਜਰ";
+
+        document.querySelector(".g020").textContent = "0 - 20 MBGL";
+        document.querySelector(".g2040").textContent = "20 - 40 MBGL";
+        document.querySelector(".g4060").textContent = "40 - 60 MBGL";
+        document.querySelector(".g6080").textContent = "60 - 80 MBGL";
+        document.querySelector(".g80100").textContent = "80 - 100 MBGL";
+        document.querySelector(".g100120").textContent = "100 - 120 MBGL";
+
+        document.querySelector(".construction").textContent =
+            "🚧 ਵੈੱਬਸਾਈਟ ਨਿਰਮਾਣ ਅਧੀਨ ਹੈ 👷! 🚧";
+    });
+</script>
+
+
+
+
+
+
+
+
+<script src="script.js "></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js " integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF " crossorigin="anonymous "></script>
+<script src="https://kit.fontawesome.com/4205809cac.js " crossorigin="anonymous "></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js "></script>
+<script>
+    AOS.init();
+</script>
+
+</html>

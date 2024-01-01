@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: aquamarine;
+    background-image: url(/loam\ is\ life\ 3.jpg);
+}
+
+nav {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyKELEY279AUbdrlW9RBQVTBr9SO-_boHPpw&usqp=CAU);
+    /* animation: marquee 35s infinite linear; */
+}
+
+.navbar-brand {
+    color: #3cdc24;
+    text-shadow: #1d7003;
+}
+
+.nav-link {
+    color: dodgerblue;
+}
+
+.nav-item {
+    background-color: beige;
+    border-radius: 50px;
+    margin: 10px;
+    padding: 0px 10px 0px 10px;
+}
+
+.active-page {
+    background-color: aquamarine;
+}
+
+.navbar-brand:hover {
+    color: #3cdc24;
+}
+
+#home1 {
+    background-image: url(https://img.freepik.com/free-photo/young-plant-isolated-white_93675-135787.jpg);
+}
+
+#newsletter {
+    background-color: darkseagreen;
+    padding-bottom: 20px;
+}
+
+.dropdownheader {
+    font-size: xx-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#home form label {
+    font-weight: bolder;
+    font-size: larger;
+    color: chocolate;
+}
+
+select {
+    height: 100px;
+    width: 300px;
+}
